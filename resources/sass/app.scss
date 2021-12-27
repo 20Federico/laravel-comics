@@ -1,1 +1,15 @@
-//
+@import "partials/variables";
+@import "partials/utilities";
+
+@import "partials/header";
+
+@import "partials/footerTop";
+@import "partials/footer";
+
+* {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+  margin: 0;
+}

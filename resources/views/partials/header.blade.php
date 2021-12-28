@@ -22,7 +22,11 @@ $navLinks= [
     <img src="{{asset('img/dc-logo.png')}}" alt="dc logo">
     <ul>
       @foreach ($navLinks as $link)
+      @if ($link['linkName'] == 'SHOP')
+      <li><a class="dropdown-toggle" href="{{ $link['href'] }}">{{ $link['linkName'] }}</a></li>    
+      @else
       <li><a href="{{ $link['href'] }}">{{ $link['linkName'] }}</a></li>
+      @endif
       @endforeach
     </ul>
   </nav>

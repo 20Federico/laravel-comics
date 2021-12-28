@@ -20,3 +20,7 @@ Route::get('/', function () {
         "comicsList"=> $comics_list
     ]);
 });
+
+Route::get('/comic_details', function() {
+    return view('comic_details');
+});

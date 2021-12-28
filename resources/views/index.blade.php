@@ -6,7 +6,7 @@ Create più pagine istituzionali che condividono lo stesso layout --}}
 
 @extends('layouts.default')
 
-@section('page_title', 'homepage')
+@section('page_title', 'comics')
 
 
 @section('main_content')

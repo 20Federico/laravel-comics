@@ -30,4 +30,7 @@ $navLinks= [
       @endforeach
     </ul>
   </nav>
+
+  <div class="banner">
+  </div>
 </header>

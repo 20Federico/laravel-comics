@@ -24,6 +24,11 @@
       opacity: 0;
       transition: 0.5s;
       transition-delay: 0.2s;
+
+      a {
+        padding: 5px;
+        text-decoration: none;
+      }
     }
 
     &:hover {

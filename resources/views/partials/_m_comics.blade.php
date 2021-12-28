@@ -1,7 +1,5 @@
 <div>
   <div class="component_container">
-    <div class="banner">
-    </div>
     <div class="container">
       <div class="label">
         CURRENT SERIES
@@ -14,13 +12,14 @@
           <div class="overlay">
             <p>type: {{ $comic["type"] }}</p>
             <p>price: {{ $comic["price"] }}</p>
+            <a href="/comic_details" class="btn_outline_primary">more details</a>
           </div>
           <p>{{strtoupper($comic["series"])}}</p>
         </div>
         @endforeach
 
       </div>
-      <button class="btn_primary">LOAD MORE</button>
+      <button class="btn_primary btn_center">LOAD MORE</button>
     </div>
   </div>
 </div>

@@ -77,14 +77,14 @@ header nav ul a.active::before {
   left: 0;
 }
 
-.component_container {
-  background-color: black;
-}
-
-.component_container .banner {
+.banner {
   height: 35vh;
   background-image: url("/img/jumbotron.jpg");
   background-size: cover;
+}
+
+.component_container {
+  background-color: black;
 }
 
 .component_container .container {
@@ -112,7 +112,7 @@ header nav ul a.active::before {
   flex-wrap: wrap;
 }
 
-.component_container .container button {
+.component_container .container .btn_center {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -145,6 +145,11 @@ header nav ul a.active::before {
   opacity: 0;
   transition: 0.5s;
   transition-delay: 0.2s;
+}
+
+.card .overlay a {
+  padding: 5px;
+  text-decoration: none;
 }
 
 .card:hover .cover_box {

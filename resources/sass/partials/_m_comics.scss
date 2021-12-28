@@ -1,11 +1,6 @@
 .component_container {
   background-color: black;
-
-  .banner {
-      height: 35vh;
-      background-image: url('/img/jumbotron.jpg');
-      background-size: cover;
-  }
+  
   .container {
     display: flex;
     align-items: center;
@@ -30,7 +25,7 @@
       flex-wrap: wrap;
     }
 
-    button {
+    .btn_center {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);

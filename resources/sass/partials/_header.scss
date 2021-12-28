@@ -39,21 +39,6 @@ header {
         }
       }
     }
-  };
-
-  .banner {
-    height: 35vh;
-    // background-image: url("/public/img/dc-logo.png");
-    // background-color: black;
-    // min-height: 100px;
-    // background-size: cover;
-
-    img {
-      max-height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: top;
-    }
   }
 }
 

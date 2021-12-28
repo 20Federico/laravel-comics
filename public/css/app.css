@@ -77,43 +77,82 @@ header nav ul a.active::before {
   left: 0;
 }
 
-header .banner {
+.component_container {
+  background-color: black;
+}
+
+.component_container .banner {
   height: 35vh;
+  background-image: url("/img/jumbotron.jpg");
+  background-size: cover;
 }
 
-header .banner img {
-  max-height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
-}
-
-.company_info {
-  background-color: #0282F9;
-  padding: 50px 0;
-}
-
-.company_info .container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.company_info .element {
+.component_container .container {
   display: flex;
   align-items: center;
+  position: relative;
+  padding: 40px 0;
 }
 
-.company_info .element img {
-  height: 50px;
-  max-width: 60px;
-}
-
-.company_info .element a {
-  text-decoration: none;
+.component_container .container .label {
   color: white;
-  padding: 10px 15px;
+  background-color: #0282F9;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+.component_container .container .cards_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.component_container .container button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+}
+
+.card {
+  width: calc(16.6666666667% - 20px);
+  padding-bottom: 15px;
+  color: white;
+  font-size: 14px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+.card .cover_box {
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+.card .overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+
+.card:hover .cover_box {
+  opacity: 0.2;
+}
+
+.card:hover .overlay {
+  opacity: 1;
 }
 
 .company_more_info {
@@ -129,7 +168,7 @@ header .banner img {
 }
 
 .company_more_info .container .info_container {
-  max-height: 350px;
+  max-height: 400px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -197,6 +236,32 @@ header .banner img {
 
 .footer_foot .container .social_container img:hover {
   transform: scale(1.2);
+}
+
+.company_info {
+  background-color: #0282F9;
+  padding: 50px 0;
+}
+
+.company_info .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.company_info .element {
+  display: flex;
+  align-items: center;
+}
+
+.company_info .element img {
+  height: 50px;
+  max-width: 60px;
+}
+
+.company_info .element a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
 }
 
 * {

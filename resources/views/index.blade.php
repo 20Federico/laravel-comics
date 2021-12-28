@@ -10,5 +10,5 @@ Create più pagine istituzionali che condividono lo stesso layout --}}
 
 
 @section('main_content')
-    
+    @include('partials.main')
 @endsection
